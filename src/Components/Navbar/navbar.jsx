@@ -2,35 +2,36 @@ import React from "react";
 import "./navbar.css";
 import MyPic from "../Assests/My-pic.jpg";
 import darkLogo from "../Assests/dark mode.jpg";
+import Home from "../Assests/Home.svg";
+import Menu from "../Assests/Menu.svg";
+import Projects from "../Assests/Projects.svg";
+import About from "../Assests/About.svg";
 
 const Navbar = () => {
   return (
-    <nav className="navbar">
-      <div className="logo">
-        <img src={MyPic} alt="Abdallah Shili" />
-        <h1>abdallah</h1>
-      </div>
-      <ul className="nav-links">
-        <li>
+    <>
+      <nav class="top_navbar">
+        <div class="logo">
+          <img src={MyPic} className="my_pic" alt="Abdallah Shili" />
+          <h1 className="my_name">abdallah</h1>
+        </div>
+        <div class="nav_links">
           <a href="#about">About</a>
-        </li>
-        <li>
           <a href="#projects">Projects</a>
-        </li>
-        <li>
           <a href="#services">Services</a>
-        </li>
-        <li>
           <a href="#blog">Blog</a>
-        </li>
-        <li>
-          <a href="#cv">My CV</a>
-        </li>
-        <li>
-          <img src={darkLogo} alt="dark mode logo" />
-        </li>
-      </ul>
-    </nav>
+          <a href="#cv">My_CV</a>
+          <div class="dark-mode-icon">Dark Mode</div>
+        </div>
+      </nav>
+      {/* <nav class="bottom_navbar">
+        <div class="icon">Home</div>
+        <div class="icon">About</div>
+        <div class="icon">Projects</div>
+        <div class="icon">Menu</div>
+      </nav> */}
+      /
+    </>
   );
 };
 
