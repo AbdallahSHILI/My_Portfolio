@@ -21,16 +21,64 @@ const Navbar = () => {
           <a href="#services">Services</a>
           <a href="#blog">Blog</a>
           <a href="#cv">My_CV</a>
-          <div class="dark-mode-icon">Dark Mode</div>
+          <img src={darkLogo} className="darkLogo" alt="dark Logo" />
         </div>
       </nav>
-      {/* <nav class="bottom_navbar">
-        <div class="icon">Home</div>
-        <div class="icon">About</div>
-        <div class="icon">Projects</div>
-        <div class="icon">Menu</div>
+
+      <nav class="bottom_navbar">
+        <div>
+          <img src={Home} className="mobile_icon" alt="Home" />
+          <span className="mobile_text">Home</span>
+        </div>
+        <div>
+          <img src={About} className="mobile_icon" alt="About" />
+          <span className="mobile_text">About</span>
+        </div>
+        <div>
+          <img src={Projects} className="mobile_icon" alt="Projects" />
+          <span className="mobile_text">Projects</span>
+        </div>
+        <div>
+          <img src={Menu} className="mobile_icon" alt="Menu" />
+          <span className="mobile_text">Menu</span>
+        </div>
+      </nav>
+
+      {/* <nav className="navbar">
+        <div className="logo"></div>
+        <div>
+          <a href="#about">About</a>
+         
+        </div>
+        <div>
+          <a href="#projects">Projects</a>
+          <img src={Projects} className="mobile-icon" alt="Projects" />
+        </div>
+        <div>
+          <a href="#services">Services</a>
+        </div>
+        <ul className="nav-links">
+          <div>
+            <li></li>
+          </div>
+          <div>
+            <li></li>
+          </div>
+          <div>
+            <li></li>
+          </div>
+          <li>
+            <a href="#blog">Blog</a>
+            <img src={Menu} className="mobile-icon" alt="Menu" />
+          </li>
+          <li>
+            <a href="#cv">My CV</a>
+          </li>
+          <li>
+            <img src={darkLogo} className="darkMode" alt="dark mode logo" />
+          </li>
+        </ul>
       </nav> */}
-      /
     </>
   );
 };
