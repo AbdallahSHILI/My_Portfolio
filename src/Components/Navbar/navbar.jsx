@@ -25,18 +25,30 @@ const Navbar = () => {
         </div>
       </nav>
 
-      {/* <nav class="bottom_navbar">
-        <div class="icon">Home</div>
-        <div class="icon">About</div>
-        <div class="icon">Projects</div>
-        <div class="icon">Menu</div>
-      </nav> */}
+      <nav class="bottom_navbar">
+        <div>
+          <img src={Home} className="mobile_icon" alt="Home" />
+          <span className="mobile_text">Home</span>
+        </div>
+        <div>
+          <img src={About} className="mobile_icon" alt="About" />
+          <span className="mobile_text">About</span>
+        </div>
+        <div>
+          <img src={Projects} className="mobile_icon" alt="Projects" />
+          <span className="mobile_text">Projects</span>
+        </div>
+        <div>
+          <img src={Menu} className="mobile_icon" alt="Menu" />
+          <span className="mobile_text">Menu</span>
+        </div>
+      </nav>
 
       {/* <nav className="navbar">
         <div className="logo"></div>
         <div>
           <a href="#about">About</a>
-          <img src={About} className="mobile-icon" alt="About" />
+         
         </div>
         <div>
           <a href="#projects">Projects</a>
