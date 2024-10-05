@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import MyPic from "../Assests/My-pic.jpg";
 import darkLogo from "../Assests/dark mode.jpg";
@@ -6,17 +6,27 @@ import Home from "../Assests/Home.svg";
 import Menu from "../Assests/Menu.svg";
 import Projects from "../Assests/Projects.svg";
 import About from "../Assests/About.svg";
+import { Link } from "react-router-dom";
+import Sidebar from "../SideBar/sideBar";
 
 const Navbar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <>
       <nav class="top_navbar">
-        <div class="logo">
-          <img src={MyPic} className="my_pic" alt="Abdallah Shili" />
-          <h1 className="my_name">abdallah</h1>
-        </div>
+        <Link to="/">
+          <div class="logo">
+            <img src={MyPic} className="my_pic" alt="Abdallah Shili" />
+            <h1 className="my_name">abdallah</h1>
+          </div>
+        </Link>
         <div class="nav_links">
-          <a href="#about">About</a>
+          <Link to="/About"> About </Link>
           <a href="#projects">Projects</a>
           <a href="#services">Services</a>
           <a href="#blog">Blog</a>
@@ -26,23 +36,28 @@ const Navbar = () => {
       </nav>
 
       <nav class="bottom_navbar">
-        <div>
-          <img src={Home} className="mobile_icon" alt="Home" />
-          <span className="mobile_text">Home</span>
-        </div>
-        <div>
-          <img src={About} className="mobile_icon" alt="About" />
-          <span className="mobile_text">About</span>
-        </div>
+        <Link to="/">
+          <div>
+            <img src={Home} className="mobile_icon" alt="Home" />
+            <span className="mobile_text">Home</span>
+          </div>
+        </Link>
+        <Link to="/About">
+          <div>
+            <img src={About} className="mobile_icon" alt="About" />
+            <span className="mobile_text">About</span>
+          </div>
+        </Link>
         <div>
           <img src={Projects} className="mobile_icon" alt="Projects" />
           <span className="mobile_text">Projects</span>
         </div>
-        <div>
+        <div onClick={toggleSidebar}>
           <img src={Menu} className="mobile_icon" alt="Menu" />
           <span className="mobile_text">Menu</span>
         </div>
       </nav>
+      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
       {/* <nav className="navbar">
         <div className="logo"></div>
