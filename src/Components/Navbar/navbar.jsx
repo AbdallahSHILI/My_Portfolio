@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import MyPic from "../Assests/My-pic.jpg";
 import darkLogo from "../Assests/dark mode.jpg";
@@ -7,8 +7,15 @@ import Menu from "../Assests/Menu.svg";
 import Projects from "../Assests/Projects.svg";
 import About from "../Assests/About.svg";
 import { Link } from "react-router-dom";
+import Sidebar from "../SideBar/sideBar";
 
 const Navbar = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
     <>
       <nav class="top_navbar">
@@ -45,11 +52,12 @@ const Navbar = () => {
           <img src={Projects} className="mobile_icon" alt="Projects" />
           <span className="mobile_text">Projects</span>
         </div>
-        <div>
+        <div onClick={toggleSidebar}>
           <img src={Menu} className="mobile_icon" alt="Menu" />
           <span className="mobile_text">Menu</span>
         </div>
       </nav>
+      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
 
       {/* <nav className="navbar">
         <div className="logo"></div>

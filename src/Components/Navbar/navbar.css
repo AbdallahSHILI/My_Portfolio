@@ -21,7 +21,7 @@
 .logo h1 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: black;
+  color: var(--third-color);
   margin-left: 10px;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .nav_links a {
-  color: black;
+  color: var(--third-color);
   text-decoration: none;
   font-size: 1rem;
   padding: 8px 15px;
@@ -109,6 +109,6 @@
   .mobile_text {
     margin-top: 5px; /* Space between icon and text */
     font-size: 12px;
-    color: #000;
+    color: var(--third-color);
   }
 }
