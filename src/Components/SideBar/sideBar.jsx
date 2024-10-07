@@ -18,7 +18,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
     <div className={`sidebar ${isOpen ? "open" : ""}`}>
       <div className="sidebar-header">
         <button className="close-btn" onClick={toggleSidebar}>
-          X
+          X Close Menu
         </button>
         <div className="sidebar-profile">
           <img src={MyPic} className="sidebar-pic" alt="Abdallah Shili" />
