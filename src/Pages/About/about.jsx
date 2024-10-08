@@ -14,17 +14,16 @@ const About = () => {
       <section className="content-section">
         <img src={myPic} alt="Abdallah Shili" className="profile-pic left" />
         <div className="text-content">
-          <h2>About Me</h2>
           <p>
-            I’m a user experience consultant working with teams around the world
-            to help create outstanding websites. I’ve been a developer since I
-            started my career 5 years ago, and have always taken a deep interest
-            in making websites the best they can be for everyone using them.
-            <br />
-            Now I design and develop beautiful websites which focus on providing
-            the best experience for everyone using them, ensuring they are easy
-            for your team to edit while also delivering the best experience for
-            your users.
+            As a dedicated web developer, I specialize in building robust and
+            scalable applications using React and Node.js.
+            <br /> With a strong foundation in web technologies like MongoDB and
+            Next.js, I create solutions that are both efficient and
+            user-friendly.
+            <br /> My passion for web development drives me to constantly expand
+            my skill set and deliver high-quality work.
+            <br /> I'm committed to crafting applications that not only meet
+            technical standards but also provide an exceptional user experience.
           </p>
         </div>
       </section>
@@ -58,6 +57,7 @@ const About = () => {
           className="profile-pic right"
         />
       </section>
+      <levelUp />
     </div>
   );
 };
