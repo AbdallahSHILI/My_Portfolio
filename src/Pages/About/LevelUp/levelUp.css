@@ -1,36 +1,66 @@
 /* Style for the main container */
 .level-up-container {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  /* Style for the left content */
-  .left-content {
-    flex: 1;
-    padding-right: 20px;
-  }
-  
-  /* Style for the button */
-  .level-up-btn {
-    padding: 10px 20px;
-    background-color: #007BFF; /* Example button color */
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  .level-up-btn:hover {
-    background-color: #0056b3; /* Darker shade on hover */
-  }
-  
-  /* Style for the image */
-  .right-image img {
-    max-width: 100%; /* Ensure the image is responsive */
-    border-radius: 10px; /* Optional: Add rounded corners to the image */
-  }
-  
+  width: 76%;
+  margin: 0 auto;
+  height: 23rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  flex-wrap: wrap; /* Ensure layout wraps properly on smaller screens */
+}
+
+/* Style for the left content */
+.left-content {
+  flex: 2;
+  padding-right: 20px;
+  margin-left: 38px;
+  color: var(--third-color);
+  max-width: 600px;
+}
+
+.left-content h1 {
+  font-size: 3rem; /* Increase the size as needed */
+  font-weight: bold; /* Make it stand out more */
+  color: var(--third-color); /* Adjust color if needed */
+}
+
+/* Style for the button */
+.level-up-btn {
+  padding: 10px 20px;
+  background-color: var(--third-color); /* Example button color */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.level-up-btn:hover {
+  transform: translateY(-5px); /* Move the button slightly upward */
+}
+
+/* Updated style for the right image */
+.right-image {
+  flex: 1; /* Set the width you want for the image container */
+  height: 300px; /* Set a fixed height for the image container */
+  overflow: hidden; /* Hide the overflowing part of the image */
+  position: relative;
+  display: flex;
+  padding-right: 40px;
+  justify-content: flex-end; /* Align image to the right */
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Style for the image */
+.right-image img {
+  width: 87%; /* Make the image wider than the container */
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  right: -140px; /* Adjust the image to the left so it overflows */
+  border-radius: 10px;
+}

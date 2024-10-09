@@ -1,12 +1,13 @@
 import React from "react";
 import "./levelUp.css";
+import tools from "../../../Components/Assests/contactMe.webp";
 
 const levelUp = () => {
   return (
     <div className="level-up-container">
       {/* Left Content */}
       <div className="left-content">
-        <h2>Where do we start?</h2>
+        <h1>Where do we start?</h1>
         <p>
           Schedule a call so I can learn about your product and we can discuss
           the best way to help you meet your goals. I only work with two people
@@ -17,7 +18,7 @@ const levelUp = () => {
 
       {/* Right Image */}
       <div className="right-image">
-        <img src="your-image-url.jpg" alt="Level Up" />
+        <img src={tools} alt="Level Up" />
       </div>
     </div>
   );
