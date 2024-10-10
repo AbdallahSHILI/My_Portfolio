@@ -1,6 +1,6 @@
 /* Style for the main container */
 .level-up-container {
-  width: 76%;
+  width: 950px; /* Use viewport width (vw) to dynamically adjust with screen size */
   margin: 0 auto;
   height: 23rem;
   display: flex;
@@ -9,6 +9,8 @@
   background-color: var(--secondary-color);
   border-radius: 20px;
   flex-wrap: wrap; /* Ensure layout wraps properly on smaller screens */
+  transition: width 0.3s ease, margin 0.3s ease;
+  max-width: 100%; /* Prevent the container from exceeding 100% of the screen */
 }
 
 /* Style for the left content */
@@ -46,21 +48,39 @@
 /* Updated style for the right image */
 .right-image {
   flex: 1; /* Set the width you want for the image container */
-  height: 300px; /* Set a fixed height for the image container */
+  height: 368px; /* Set a fixed height for the image container */
   overflow: hidden; /* Hide the overflowing part of the image */
   position: relative;
   display: flex;
   padding-right: 40px;
   justify-content: flex-end; /* Align image to the right */
   border-radius: 10px; /* Optional: Rounded corners */
+  z-index: 1;
 }
 
 /* Style for the image */
 .right-image img {
-  width: 87%; /* Make the image wider than the container */
-  height: 100%;
+  width: 120%; /* Increase the width so the image overflows */
+  height: 120%; /* Increase the height so the image overflows */
   object-fit: cover;
-  position: relative;
-  right: -140px; /* Adjust the image to the left so it overflows */
+  position: absolute; /* Position the image absolutely inside the container */
+  top: -40px; /* Shift the image upwards */
+  right: -60px; /* Shift the image to the right */
+  z-index: -2; /* Ensure the image stays behind the content */
   border-radius: 10px;
+}
+/* Media query to handle small screens */
+@media screen and (max-width: 1075px) {
+  .level-up-container {
+    width: 650px; /* Take the full viewport width at smaller sizes */
+  }
+
+  .right-image img {
+    width: 164%;
+
+    top: -32px;
+    right: -148px;
+    z-index: -2;
+    border-radius: 10px;
+  }
 }

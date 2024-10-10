@@ -71,12 +71,14 @@
     gap: 50px;
     bottom: 0;
     left: 0;
+    width: 100%;
     right: 0;
     margin: 20px auto; /* Corrected margin to center horizontally */
     width: 63%;
     justify-content: space-around;
     border-radius: 20px;
     padding: 10px;
+    z-index: 10;
     background-color: var(--primary-color); /* Adjust background color */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   }
