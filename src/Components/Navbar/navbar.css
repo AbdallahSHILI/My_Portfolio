@@ -64,7 +64,6 @@
     display: none;
   }
 
-  /* Make the navbar fixed at the bottom */
   .bottom_navbar {
     position: fixed;
     display: flex;
@@ -73,17 +72,16 @@
     left: 0;
     width: 100%;
     right: 0;
-    margin: 20px auto; /* Corrected margin to center horizontally */
+    margin: 20px auto;
     width: 63%;
     justify-content: space-around;
     border-radius: 20px;
     padding: 10px;
     z-index: 10;
-    background-color: var(--primary-color); /* Adjust background color */
+    background-color: var(--primary-color);
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
   }
 
-  /* Ensure icons and text are vertically aligned */
   .bottom_navbar img {
     display: block;
     margin: 0 auto;
@@ -94,13 +92,11 @@
     height: 30px;
   }
 
-  /* Align icon and text vertically */
   .bottom_navbar {
     display: flex;
     gap: 30px;
   }
 
-  /* New styles for icon and text stack */
   .bottom_navbar > div {
     display: flex;
     flex-direction: column;
@@ -109,7 +105,7 @@
   }
 
   .mobile_text {
-    margin-top: 5px; /* Space between icon and text */
+    margin-top: 5px;
     font-size: 12px;
     color: var(--third-color);
   }

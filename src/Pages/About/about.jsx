@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css"; // Create a CSS file for styling
 import myPic from "../../Components/Assests/My-pic.jpg";
-import { LevelUp } from "..";
+import { AboutFooter, LevelUp } from "..";
 
 const About = () => {
   return (
@@ -59,6 +59,7 @@ const About = () => {
         />
       </section>
       <LevelUp />
+      <AboutFooter />
     </div>
   );
 };
