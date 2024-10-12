@@ -1,6 +1,7 @@
 /* General Page Styles */
 .about-page {
   font-family: Arial, sans-serif;
+  padding-bottom: 100px;
 }
 
 /* Full Page Section for Introduction */
@@ -44,12 +45,7 @@
   line-height: 1.6;
 }
 
-/* Reverse Layout for Alternating Sections */
-.reverse {
-  flex-direction: row-reverse;
-}
-
-.profile-pic.left {
+.profile_pic_left {
   margin-right: 30px;
 }
 
