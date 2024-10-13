@@ -33,7 +33,7 @@
   min-height: 100vh;
 }
 
-.profile-pic {
+.profile_pic_aboutMe {
   max-width: 40%;
   border-radius: 10px;
   margin-right: 30px;
@@ -45,9 +45,9 @@
   line-height: 1.6;
 }
 
-.profile_pic_left {
+/* .profile_pic_aboutMe {
   margin-right: 30px;
-}
+} */
 
 .profile-pic.right {
   margin-left: 30px;
