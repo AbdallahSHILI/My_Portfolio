@@ -27,7 +27,7 @@ const Navbar = () => {
         </Link>
         <div class="nav_links">
           <Link to="/About"> About </Link>
-          <a href="#projects">Projects</a>
+          <Link to="/Projects"> Projects </Link>
           <a href="#services">Services</a>
           <a href="#blog">Blog</a>
           <a href="#cv">My_CV</a>
@@ -48,10 +48,12 @@ const Navbar = () => {
             <span className="mobile_text">About</span>
           </div>
         </Link>
-        <div>
-          <img src={Projects} className="mobile_icon" alt="Projects" />
-          <span className="mobile_text">Projects</span>
-        </div>
+        <Link to="/Projects">
+          <div>
+            <img src={Projects} className="mobile_icon" alt="Projects" />
+            <span className="mobile_text">Projects</span>
+          </div>
+        </Link>
         <div onClick={toggleSidebar}>
           <img src={Menu} className="mobile_icon" alt="Menu" />
           <span className="mobile_text">Menu</span>

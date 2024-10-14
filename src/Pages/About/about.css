@@ -1,7 +1,6 @@
 /* General Page Styles */
 .about-page {
   font-family: Arial, sans-serif;
-  padding-bottom: 100px;
 }
 
 /* Full Page Section for Introduction */
@@ -72,6 +71,11 @@
 }
 
 @media (max-width: 1270px) {
+  /* General Page Styles */
+  .about-page {
+    padding-bottom: 100px;
+  }
+
   .full-page-section {
     height: 30vh; /* 30% of the page height */
     width: 100%; /* Full width */

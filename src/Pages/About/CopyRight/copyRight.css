@@ -4,7 +4,7 @@
 }
 
 .copy-right-line {
-  width: 780px;
+  width: 1140px;
   border: none;
   border-top: 2px solid var(--primary-color);
   margin: 0 auto; /* Center the line */
@@ -14,7 +14,7 @@
   font-size: 0.9rem;
   color: black;
   margin: 0 auto;
-  max-width: 780px; /* Ensures the text does not exceed the line width */
+  max-width: 1140px;
   text-align: left; /* Aligns the text to the left */
   padding-top: 10px; /* Adds a little space between the line and text */
 }
