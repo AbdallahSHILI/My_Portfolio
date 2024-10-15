@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+.hire-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 50px;
+}
+
+.hire-title {
+  font-weight: bold;
+  margin: 2px;
+  font-size: 55px;
+  color: var(--third-color);
+}
+
+.hire-description {
+  margin-top: 20px;
+  font-size: 18px;
+  max-width: 600px;
+}
+
+.hire-button {
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif; /* Use Poppins font */
+  font-weight: 600; /* Makes the text slightly bolder for better button emphasis */
+  background-color: var(--secondary-color);
+  color: var(--third-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.hire-button:hover {
+  transform: translateY(-5px); /* Move the button slightly upward */
+}
+
+@media (max-width: 1270px) {
+  /* General Page Styles */
+  .hire-me-today-container {
+    padding-bottom: 100px;
+  }
+}

@@ -1,0 +1,73 @@
+.contact-container {
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  transition: all 0.5s ease;
+}
+
+.contact-left {
+  width: 35%;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.contact-right {
+  width: 65%;
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+
+.profile-pic {
+  max-width: 40%;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+.contact-button,
+.send-button {
+  padding: 10px 20px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.contact-button:hover,
+.send-button:hover {
+  background-color: lightgray;
+}
+
+.form-visible .contact-left {
+  width: 65%;
+}
+
+.form-visible .contact-right {
+  width: 35%;
+}
+
+.email-input,
+.message-input {
+  width: 80%;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.email-input {
+  margin-top: 20px;
+}
+
+.message-input {
+  height: 100px;
+  resize: none;
+}
