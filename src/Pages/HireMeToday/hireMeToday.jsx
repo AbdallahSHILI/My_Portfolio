@@ -2,6 +2,7 @@ import React from "react";
 import "./hireMeToday.css"; // Importing the CSS file
 import { AboutFooter, CopyRight } from "../index";
 import { Link } from "react-router-dom";
+import { PrimaryButton } from "../../Components/index";
 
 const HireMeToday = () => {
   return (
@@ -22,7 +23,7 @@ const HireMeToday = () => {
           grow your business with a web app designed to thrive.
         </p>
         <Link to="/HireMe/Contact">
-          <button className="hire-button">Hire Abdallah Today</button>
+          <PrimaryButton text="Hire Abdallah Today" />
         </Link>
       </div>
       <AboutFooter />
