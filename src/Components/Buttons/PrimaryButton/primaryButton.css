@@ -1,0 +1,17 @@
+.primary_button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif; /* Use Poppins font */
+    font-weight: 600; /* Makes the text slightly bolder for better button emphasis */
+    background-color: var(--secondary-color);
+    color: var(--third-color);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .primary_button:hover {
+    transform: translateY(-5px); /* Move the button slightly upward */
+  }

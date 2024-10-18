@@ -18,14 +18,14 @@ const Navbar = () => {
 
   return (
     <>
-      <nav class="top_navbar">
+      <nav className="top_navbar">
         <Link to="/">
-          <div class="logo">
+          <div className="logo">
             <img src={MyPic} className="my_pic" alt="Abdallah Shili" />
             <h1 className="my_name">abdallah</h1>
           </div>
         </Link>
-        <div class="nav_links">
+        <div className="nav_links">
           <Link to="/About"> About </Link>
           <Link to="/Projects"> Projects </Link>
           <Link to="/HireMe"> Hire Me Today </Link>
@@ -37,7 +37,7 @@ const Navbar = () => {
         </div>
       </nav>
 
-      <nav class="bottom_navbar">
+      <nav className="bottom_navbar">
         <Link to="/">
           <div>
             <img src={Home} className="mobile_icon" alt="Home" />
@@ -62,42 +62,6 @@ const Navbar = () => {
         </div>
       </nav>
       <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
-
-      {/* <nav className="navbar">
-        <div className="logo"></div>
-        <div>
-          <a href="#about">About</a>
-         
-        </div>
-        <div>
-          <a href="#projects">Projects</a>
-          <img src={Projects} className="mobile-icon" alt="Projects" />
-        </div>
-        <div>
-          <a href="#services">Services</a>
-        </div>
-        <ul className="nav-links">
-          <div>
-            <li></li>
-          </div>
-          <div>
-            <li></li>
-          </div>
-          <div>
-            <li></li>
-          </div>
-          <li>
-            <a href="#blog">Blog</a>
-            <img src={Menu} className="mobile-icon" alt="Menu" />
-          </li>
-          <li>
-            <a href="#cv">My CV</a>
-          </li>
-          <li>
-            <img src={darkLogo} className="darkMode" alt="dark mode logo" />
-          </li>
-        </ul>
-      </nav> */}
     </>
   );
 };
