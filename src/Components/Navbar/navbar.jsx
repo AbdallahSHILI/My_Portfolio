@@ -4,6 +4,7 @@ import MyPic from "../Assests/My-pic.jpg";
 import darkLogo from "../Assests/dark mode.jpg";
 import Home from "../Assests/Home.svg";
 import Menu from "../Assests/Menu.svg";
+import CloseIcon from "../Assests/close.svg";
 import Projects from "../Assests/Projects.svg";
 import About from "../Assests/About.svg";
 import { Link } from "react-router-dom";
@@ -57,8 +58,15 @@ const Navbar = () => {
           </div>
         </Link>
         <div onClick={toggleSidebar}>
-          <img src={Menu} className="mobile_icon" alt="Menu" />
-          <span className="mobile_text">Menu</span>
+          {/* Conditionally rendering the menu or close (X) icon */}
+          <img
+            src={isSidebarOpen ? CloseIcon : Menu}
+            className="mobile_icon"
+            alt={isSidebarOpen ? "Close" : "Menu"}
+          />
+          <span className="mobile_text">
+            {isSidebarOpen ? "Close" : "Menu"}
+          </span>
         </div>
       </nav>
       <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
