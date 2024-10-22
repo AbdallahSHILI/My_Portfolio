@@ -8,3 +8,4 @@ export { default as CopyRight } from "./About/CopyRight/copyRight";
 export { default as MyStory } from "./About/MyStory/myStory";
 export { default as ContactMe } from "./HireMeToday/ContactMe/contactMe";
 export { default as MainHome } from "./Home/MainHome/mainHome";
+export { default as ScreenshotGif } from "./Home/ScreenShotGif/screenshotGif";
