@@ -6,12 +6,14 @@ import {
   LevelUp,
   MainHome,
   ScreenshotGif,
+  Services,
 } from "../index";
 const Home = () => {
   return (
     <div className="home_container">
       <MainHome />
       <ScreenshotGif />
+      <Services/>
       <LevelUp />
       <AboutFooter />
       <CopyRight />

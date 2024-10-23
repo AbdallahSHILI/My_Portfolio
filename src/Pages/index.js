@@ -9,3 +9,4 @@ export { default as MyStory } from "./About/MyStory/myStory";
 export { default as ContactMe } from "./HireMeToday/ContactMe/contactMe";
 export { default as MainHome } from "./Home/MainHome/mainHome";
 export { default as ScreenshotGif } from "./Home/ScreenShotGif/screenshotGif";
+export { default as Services } from "./Home/Services/services";

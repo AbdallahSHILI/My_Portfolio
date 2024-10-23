@@ -19,3 +19,9 @@ h1 {
   margin-bottom: 40px;
   color: var(--third-color);
 }
+
+@media (max-width: 1270px) {
+  .main_home_container {
+    height: 60vh;
+  }
+}
