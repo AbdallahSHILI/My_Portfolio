@@ -1,0 +1,33 @@
+.main_service_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: white; /* Optional: add a background color */
+}
+
+h1 {
+  max-width: 900px;
+  font-size: 3.5rem;
+  margin-bottom: 40px;
+  color: var(--third-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1270px) {
+  .main_service_container {
+    height: 60vh;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+}

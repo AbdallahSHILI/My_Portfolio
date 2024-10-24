@@ -31,7 +31,7 @@ const Navbar = () => {
           <Link to="/Projects"> Projects </Link>
           <Link to="/HireMe"> Hire Me Today </Link>
           <a href="#cv">My_CV</a>
-          <a href="#services">Services</a>
+          <Link to="/Services">Services</Link>
           <a href="#blog">Blog</a>
 
           <img src={darkLogo} className="darkLogo" alt="dark Logo" />
