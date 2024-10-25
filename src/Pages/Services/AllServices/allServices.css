@@ -1,0 +1,45 @@
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Set two columns */
+  gap: 20px;
+}
+
+.service-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.logo-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.service-logo {
+  width: 40px; /* Adjust size if needed */
+  height: 40px;
+}
+
+.service-item h2 {
+  margin-top: 60px; /* Ensure text doesn't overlap with the logo */
+}
+
+@media screen and (max-width: 768px) {
+  .services-list {
+    grid-template-columns: 1fr; /* Stack items in one column on smaller screens */
+  }
+}
