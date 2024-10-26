@@ -12,9 +12,14 @@ import Sidebar from "../SideBar/sideBar";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState("");
 
   const toggleSidebar = () => {
     setIsSidebarOpen(!isSidebarOpen);
+  };
+
+  const handleItemClick = (item) => {
+    setActiveItem(item);
   };
 
   return (
@@ -40,25 +45,39 @@ const Navbar = () => {
 
       <nav className="bottom_navbar">
         <Link to="/">
-          <div>
+          <div
+            onClick={() => handleItemClick("home")}
+            className={`bottom_navbar_item ${
+              activeItem === "home" ? "active" : ""
+            }`}
+          >
             <img src={Home} className="mobile_icon" alt="Home" />
             <span className="mobile_text">Home</span>
           </div>
         </Link>
         <Link to="/About">
-          <div>
+          <div
+            onClick={() => handleItemClick("about")}
+            className={`bottom_navbar_item ${
+              activeItem === "about" ? "active" : ""
+            }`}
+          >
             <img src={About} className="mobile_icon" alt="About" />
             <span className="mobile_text">About</span>
           </div>
         </Link>
         <Link to="/Projects">
-          <div>
+          <div
+            onClick={() => handleItemClick("projects")}
+            className={`bottom_navbar_item ${
+              activeItem === "projects" ? "active" : ""
+            }`}
+          >
             <img src={Projects} className="mobile_icon" alt="Projects" />
             <span className="mobile_text">Projects</span>
           </div>
         </Link>
         <div onClick={toggleSidebar}>
-          {/* Conditionally rendering the menu or close (X) icon */}
           <img
             src={isSidebarOpen ? CloseIcon : Menu}
             className="mobile_icon"
