@@ -1,5 +1,5 @@
 import React from "react";
-import "./services.css";
+import style from "./services.module.css";
 import BusinessLogo from "../../../Components/Assests/Business.svg";
 import SearchLogo from "../../../Components/Assests/Search.svg";
 import DevelopmentLogo from "../../../Components/Assests/Tailored_Development.svg";
@@ -8,12 +8,16 @@ import SupportLogo from "../../../Components/Assests/Support.svg";
 
 const Services = () => {
   return (
-    <div className="services-container">
+    <div className={style.services_container}>
       <h1>Everything you need for a perfect website</h1>
-      <div className="services-list">
-        <div className="service-item">
-          <div className="logo-container">
-            <img src={SearchLogo} alt="Search Logo" className="service-logo" />
+      <div className={style.services_list}>
+        <div className={style.service_item}>
+          <div className={style.logo_container}>
+            <img
+              src={SearchLogo}
+              alt="Search Logo"
+              className={style.service_logo}
+            />
           </div>
           <h2>Application Review</h2>
           <p>
@@ -22,12 +26,12 @@ const Services = () => {
             update.
           </p>
         </div>
-        <div className="service-item">
-          <div className="logo-container">
+        <div className={style.service_item}>
+          <div className={style.logo_container}>
             <img
               src={BusinessLogo}
               alt="Business Logo"
-              className="service-logo"
+              className={style.service_logo}
             />
           </div>
           <h2>Business Strategy</h2>
@@ -36,12 +40,12 @@ const Services = () => {
             the application to meet those objectives efficiently.
           </p>
         </div>
-        <div className="service-item">
-          <div className="logo-container">
+        <div className={style.service_item}>
+          <div className={style.logo_container}>
             <img
               src={DevelopmentLogo}
               alt="Development Logo"
-              className="service-logo"
+              className={style.service_logo}
             />
           </div>
           <h2>Custom Web App Development</h2>
@@ -51,12 +55,12 @@ const Services = () => {
             flexible, high-performing solutions.
           </p>
         </div>
-        <div className="service-item">
-          <div className="logo-container">
+        <div className={style.service_item}>
+          <div className={style.logo_container}>
             <img
               src={TestingLogo}
               alt="Testing Logo"
-              className="service-logo"
+              className={style.service_logo}
             />
           </div>
           <h2>Rigorous Testing</h2>
@@ -66,12 +70,12 @@ const Services = () => {
             performance, functionality, and responsiveness.
           </p>
         </div>
-        <div className="service-item">
-          <div className="logo-container">
+        <div className={style.service_item}>
+          <div className={style.logo_container}>
             <img
               src={SupportLogo}
               alt="Support Logo"
-              className="service-logo"
+              className={style.service_logo}
             />
           </div>
           <h2>Ongoing Support</h2>

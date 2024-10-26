@@ -14,12 +14,14 @@ const allServices = () => {
           <div className="logo-container">
             <img src={SearchLogo} alt="Search Logo" className="service-logo" />
           </div>
-          <h2>Application Review</h2>
-          <p>
-            I ensure that the applications I build are performing at their best
-            by thoroughly reviewing and optimizing them before and after each
-            update.
-          </p>
+          <div className="text-container">
+            <h2>Application Review</h2>
+            <p>
+              I ensure that the applications I build are performing at their
+              best by thoroughly reviewing and optimizing them before and after
+              each update.
+            </p>
+          </div>
         </div>
         <div className="service-item">
           <div className="logo-container">
@@ -29,11 +31,13 @@ const allServices = () => {
               className="service-logo"
             />
           </div>
-          <h2>Business Strategy</h2>
-          <p>
-            We collaborate closely to understand your app's goals, and I develop
-            the application to meet those objectives efficiently.
-          </p>
+          <div className="text-container">
+            <h2>Business Strategy</h2>
+            <p>
+              We collaborate closely to understand your app's goals, and I
+              develop the application to meet those objectives efficiently.
+            </p>
+          </div>
         </div>
         <div className="service-item">
           <div className="logo-container">
@@ -43,12 +47,14 @@ const allServices = () => {
               className="service-logo"
             />
           </div>
-          <h2>Custom Web App Development</h2>
-          <p>
-            I build custom web applications with your goals in mind, using
-            modern technologies like React, Node.js, and Next.js to deliver
-            flexible, high-performing solutions.
-          </p>
+          <div className="text-container">
+            <h2>Custom Web App Development</h2>
+            <p>
+              I build custom web applications with your goals in mind, using
+              modern technologies like React, Node.js, and Next.js to deliver
+              flexible, high-performing solutions.
+            </p>
+          </div>
         </div>
         <div className="service-item">
           <div className="logo-container">
@@ -58,12 +64,14 @@ const allServices = () => {
               className="service-logo"
             />
           </div>
-          <h2>Rigorous Testing</h2>
-          <p>
-            I ensure the web applications I build are of excellent quality by
-            thoroughly testing them using various approaches, focusing on
-            performance, functionality, and responsiveness.
-          </p>
+          <div className="text-container">
+            <h2>Rigorous Testing</h2>
+            <p>
+              I ensure the web applications I build are of excellent quality by
+              thoroughly testing them using various approaches, focusing on
+              performance, functionality, and responsiveness.
+            </p>
+          </div>
         </div>
         <div className="service-item">
           <div className="logo-container">
@@ -73,11 +81,13 @@ const allServices = () => {
               className="service-logo"
             />
           </div>
-          <h2>Ongoing Support</h2>
-          <p>
-            Your application is always growing. Whether you’re adding new
-            features or making improvements, I’m here to help.
-          </p>
+          <div className="text-container">
+            <h2>Ongoing Support</h2>
+            <p>
+              Your application is always growing. Whether you’re adding new
+              features or making improvements, I’m here to help.
+            </p>
+          </div>
         </div>
       </div>
     </div>
