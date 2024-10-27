@@ -7,6 +7,14 @@
   background-color: #fff;
 }
 
+.top_navbar a:hover {
+  background-color: var(--primary-color);
+}
+
+.top_navbar a:hover span {
+  color: #fff; /* white text color */
+}
+
 .logo {
   display: flex;
   align-items: center;
@@ -55,9 +63,9 @@
 
 .bottom_navbar {
   display: none;
+  transition: transform 0.3s ease;
 }
 
-/* Mobile navbar styles */
 /* Mobile navbar styles */
 @media (max-width: 1270px) {
   .top_navbar {

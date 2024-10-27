@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./navbar.css";
 import MyPic from "../Assests/My-pic.jpg";
 import darkLogo from "../Assests/dark mode.jpg";
@@ -42,7 +42,6 @@ const Navbar = () => {
           <img src={darkLogo} className="darkLogo" alt="dark Logo" />
         </div>
       </nav>
-
       <nav className="bottom_navbar">
         <Link to="/">
           <div
@@ -88,7 +87,8 @@ const Navbar = () => {
           </span>
         </div>
       </nav>
-      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
+      {/* Main Content Wrapper */}
+      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />{" "}
     </>
   );
 };
