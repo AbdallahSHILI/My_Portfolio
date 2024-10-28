@@ -5,6 +5,7 @@ import {
   CopyRight,
   LevelUp,
   MainHome,
+  LetsAddBook,
   ScreenshotGif,
   HomeServices,
 } from "../index";
@@ -14,6 +15,7 @@ const Home = () => {
       <MainHome />
       <ScreenshotGif />
       <HomeServices />
+      <LetsAddBook />
       <LevelUp />
       <AboutFooter />
       <CopyRight />

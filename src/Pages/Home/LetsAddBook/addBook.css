@@ -1,0 +1,53 @@
+.add-book-container {
+  display: flex;
+  margin: 30px auto;
+  align-items: center;
+  background-color: var(--primary-color);
+  width: 70%;
+  height: 21rem;
+  padding: 20px;
+  border-radius: 30px;
+  overflow: hidden; /* This will hide any overflow from the image */
+  position: relative;
+}
+
+.profile_pic {
+  width: 40%;
+  height: 112%;
+  margin-right: 20px;
+  position: relative;
+  right: 96px; /* Moves the image out slightly to the left */
+  transform: translateX(10%);
+}
+
+.text-content {
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.intro-text {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.description {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+.book-call-button {
+  background-color: var(--third-color);
+  color: white;
+  border: none;
+  font-size: 17px;
+  height: 50px;
+  padding: 15px 25px;
+  border-radius: 15px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.book-call-button:hover {
+  opacity: 0.9;
+}
