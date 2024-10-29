@@ -69,6 +69,7 @@
   z-index: -2; /* Ensure the image stays behind the content */
   border-radius: 10px;
 }
+
 /* Media query to handle small screens */
 @media screen and (max-width: 1075px) {
   .level-up-container {

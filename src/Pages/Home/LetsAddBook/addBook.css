@@ -1,39 +1,53 @@
+/* addBook.css */
+
 .add-book-container {
   display: flex;
   margin: 30px auto;
   align-items: center;
   background-color: var(--primary-color);
-  width: 70%;
+  width: 80%;
+  max-width: 900px;
   height: 21rem;
   padding: 20px;
   border-radius: 30px;
-  overflow: hidden; /* This will hide any overflow from the image */
+  overflow: hidden;
   position: relative;
 }
 
 .profile_pic {
-  width: 40%;
   height: 112%;
+  width: auto;
+  max-width: 35%; /* Reduced max-width to free up more space for text */
   margin-right: 20px;
+  object-fit: cover;
   position: relative;
-  right: 96px; /* Moves the image out slightly to the left */
-  transform: translateX(10%);
+  transform: translateX(-10%);
 }
 
 .text-content {
   background-color: white;
   padding: 15px;
-  border-radius: 8px;
+  border-radius: 25px;
+  position: absolute;
+  right: 50px;
+  max-width: 600px;
+  height: 68%;
+  width: 100%;
 }
 
 .intro-text {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  margin-left: 5%;
+  margin-bottom: 10px;
+  line-height: 1.2;
 }
 
 .description {
-  margin: 10px 0;
   font-size: 1rem;
+  margin: 10px 5%;
+  line-height: 1.5;
+  max-width: 90%;
 }
 
 .book-call-button {
@@ -41,13 +55,69 @@
   color: white;
   border: none;
   font-size: 17px;
-  height: 50px;
-  padding: 15px 25px;
+  padding: 12px 20px;
   border-radius: 15px;
   cursor: pointer;
   font-weight: bold;
+  margin-left: 5%;
 }
 
 .book-call-button:hover {
   opacity: 0.9;
+}
+
+@media screen and (max-width: 1075px) {
+  .add-book-container {
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+  }
+
+  .profile_pic {
+    width: 60%; /* Scale image based on available width */
+    margin: 0 auto 15px;
+  }
+
+  .text-content {
+    width: 90%; /* Adjust to fit content better */
+    position: relative; /* Use relative positioning to avoid overlap */
+  }
+
+  .intro-text,
+  .description,
+  .book-call-button {
+    text-align: center; /* Center-align text for better readability */
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .add-book-container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    padding: 15px;
+  }
+
+  .profile_pic {
+    width: 70%;
+    margin: 0 auto 20px;
+    transform: none;
+  }
+
+  .intro-text {
+    font-size: 2rem;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    text-align: center;
+    margin: 0 auto 15px;
+  }
+
+  .book-call-button {
+    margin-left: 0;
+  }
 }
