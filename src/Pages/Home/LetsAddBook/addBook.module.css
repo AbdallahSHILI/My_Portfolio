@@ -45,7 +45,7 @@
 
 .description {
   font-size: 1rem;
-  margin: 10px 5%;
+  margin: 30px 5%;
   line-height: 1.5;
   max-width: 90%;
 }
@@ -68,25 +68,69 @@
 
 @media screen and (max-width: 1075px) {
   .add-book-container {
+    display: flex;
     flex-direction: column;
-    padding: 15px;
+    margin: 30px auto;
     align-items: center;
+    background-color: var(--primary-color);
+    width: 80%;
+    height: 30rem;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    flex-wrap: wrap;
   }
 
   .profile_pic {
-    width: 60%; /* Scale image based on available width */
-    margin: 0 auto 15px;
+    height: auto;
+    width: 50%; /* Scale based on screen width */
+    max-width: 300px;
+    margin-right: 550px;
+    object-fit: cover;
   }
 
   .text-content {
-    width: 90%; /* Adjust to fit content better */
-    position: relative; /* Use relative positioning to avoid overlap */
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    max-width: 600px;
+    height: auto;
+    margin-top: 255px;
+    right: auto; /* Reset the right property */
+    width: 90%;
+    text-align: center; /* Ensure text is centered */
   }
 
-  .intro-text,
-  .description,
+  .intro-text {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+
+  .description {
+    font-size: 1rem;
+    text-align: center; /* Center-align text */
+    margin: 15px auto; /* Center the description block */
+    line-height: 1.5;
+    max-width: 80%; /* Optional: reduce width for better centering */
+  }
+
   .book-call-button {
-    text-align: center; /* Center-align text for better readability */
+    background-color: var(--third-color);
+    color: white;
+    margin: 20px auto;
+    text-align: center;
+    border: none;
+    font-size: 17px;
+    padding: 12px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
   }
 }
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./addBook.css";
+import "./addBook.module.css";
 import MyPic from "../../../Components/Assests/My-pic-addBook.jpg";
 
 const AddBook = () => {
@@ -10,7 +10,7 @@ const AddBook = () => {
         <h1 className="intro-text">I'm Abdallah Shili</h1>
         <p className="description">
           I help you grow your business by building powerful, scalable web
-          applications that connect your goals with your users’ needs
+          applications that connect your goals with your users’ needs.
         </p>
         <button className="book-call-button">Let's book a call</button>
       </div>
