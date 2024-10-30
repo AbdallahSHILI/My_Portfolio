@@ -20,28 +20,28 @@ const AboutFooter = () => {
         </p>
         <div className="social_icons">
           <a
-            href="https://github.com"
+            href="https://github.com/AbdallahSHILI"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={GitHubIcon} alt="GitHub" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/abdallahshili/"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={LinkedInIcon} alt="LinkedIn" />
           </a>
           <a
-            href="https://twitter.com"
+            href="https://x.com/NeganSH9"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img src={TwitterIcon} alt="Twitter" />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/abdallah_sh_9/"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -1,4 +1,7 @@
+// JavaScript (JSX - myStory component)
 import React from "react";
+import "./myStory.module.css";
+import myPic from "../../../Components/Assests/My-pic.jpg";
 
 const myStory = () => {
   return (
@@ -24,11 +27,7 @@ const myStory = () => {
           consistently deliver high-quality solutions efficiently.
         </p>
       </div>
-      <img
-        src="/path-to-your-image-2.jpg"
-        alt="Abdallah Shili"
-        className="profile-pic right"
-      />
+      <img src={myPic} alt="Abdallah Shili" className="profile-pic_right" />
     </section>
   );
 };
