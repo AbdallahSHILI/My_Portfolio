@@ -2,16 +2,13 @@ import React from "react";
 import "./sideBar.css";
 import { Link } from "react-router-dom";
 import MyPic from "../Assests/My-pic.jpg";
-import GitHubIcon from "../Assests/github.svg";
-import LinkedInIcon from "../Assests/linkedIn.svg";
-import TwitterIcon from "../Assests/twitter.svg";
-import InstagramIcon from "../Assests/instagram.svg";
 import HomeIcon from "../Assests/Home.svg";
 import AboutIcon from "../Assests/About.svg";
 import ProjectsIcon from "../Assests/Projects.svg";
 import ServicesIcon from "../Assests/Services.svg";
 import BlogIcon from "../Assests/Blog.svg";
 import HireIcon from "../Assests/hireMe.svg";
+import { SocialMedia } from "../index";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
@@ -20,10 +17,12 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
         <button className="close-btn" onClick={toggleSidebar}>
           X Close Menu
         </button>
-        <div className="sidebar-profile">
-          <img src={MyPic} className="sidebar-pic" alt="Abdallah Shili" />
-          <h2 className="sidebar-name">abdallah</h2>
-        </div>
+        <Link to="/">
+          <div className="sidebar-profile">
+            <img src={MyPic} className="sidebar-pic" alt="Abdallah Shili" />
+            <h2 className="sidebar-name">abdallah</h2>
+          </div>
+        </Link>
       </div>
       <ul className="sidebar-links">
         <li>
@@ -37,14 +36,14 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </Link>
         </li>
         <li>
-          <a href="#projects">
+          <Link to="/Projects">
             <img src={ProjectsIcon} alt="Projects" /> Projects
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#services">
+          <Link to="/Services">
             <img src={ServicesIcon} alt="Services" /> Services
-          </a>
+          </Link>
         </li>
         <li>
           <a href="#blog">
@@ -57,28 +56,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </a>
         </li>
       </ul>
-      <div className="sidebar-footer">
-        <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-          <img src={GitHubIcon} alt="GitHub" />
-        </a>
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={LinkedInIcon} alt="LinkedIn" />
-        </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <img src={TwitterIcon} alt="Twitter" />
-        </a>
-        <a
-          href="https://instagram.com"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img src={InstagramIcon} alt="Instagram" />
-        </a>
-      </div>
+      <SocialMedia />
     </div>
   );
 };

@@ -1,10 +1,7 @@
 import React from "react";
 import myPic from "../../../Components/Assests/My-pic.jpg"; // Update with the correct path to your image
 import "./aboutFooter.css"; // Link to your CSS file
-import GitHubIcon from "../../../Components/Assests/github.svg";
-import LinkedInIcon from "../../../Components/Assests/linkedIn.svg";
-import TwitterIcon from "../../../Components/Assests/twitter.svg";
-import InstagramIcon from "../../../Components/Assests/instagram.svg";
+import { SocialMedia } from "../../../Components/index";
 
 const AboutFooter = () => {
   return (
@@ -18,36 +15,7 @@ const AboutFooter = () => {
           start to finish to make sure your goals are reached and your users are
           happy.
         </p>
-        <div className="social_icons">
-          <a
-            href="https://github.com/AbdallahSHILI"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={GitHubIcon} alt="GitHub" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/abdallahshili/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={LinkedInIcon} alt="LinkedIn" />
-          </a>
-          <a
-            href="https://x.com/NeganSH9"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={TwitterIcon} alt="Twitter" />
-          </a>
-          <a
-            href="https://www.instagram.com/abdallah_sh_9/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img src={InstagramIcon} alt="Instagram" />
-          </a>
-        </div>
+        <SocialMedia />
       </div>
 
       {/* Right side: Quick Links */}
