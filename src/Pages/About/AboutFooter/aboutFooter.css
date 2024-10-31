@@ -33,17 +33,6 @@
   max-width: 450px;
 }
 
-.social_icons {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-.social_icons a img {
-  width: 24px;
-  height: 24px;
-}
-
 .footer-right {
   display: flex;
   flex-direction: column;

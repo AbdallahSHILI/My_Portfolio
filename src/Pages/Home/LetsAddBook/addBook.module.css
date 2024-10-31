@@ -1,6 +1,6 @@
 /* addBook.css */
 
-.add-book-container {
+.add_book_container {
   display: flex;
   margin: 30px auto;
   align-items: center;
@@ -24,7 +24,7 @@
   transform: translateX(-10%);
 }
 
-.text-content {
+.text_content {
   background-color: white;
   padding: 15px;
   border-radius: 25px;
@@ -35,7 +35,7 @@
   width: 100%;
 }
 
-.intro-text {
+.intro_text {
   font-size: 2.5rem;
   font-weight: bold;
   margin-left: 5%;
@@ -50,7 +50,7 @@
   max-width: 90%;
 }
 
-.book-call-button {
+.book_call_button {
   background-color: var(--third-color);
   color: white;
   border: none;
@@ -62,12 +62,12 @@
   margin-left: 5%;
 }
 
-.book-call-button:hover {
+.book_call_button:hover {
   opacity: 0.9;
 }
 
 @media screen and (max-width: 1075px) {
-  .add-book-container {
+  .add_book_container {
     display: flex;
     flex-direction: column;
     margin: 30px auto;
@@ -91,7 +91,7 @@
     object-fit: cover;
   }
 
-  .text-content {
+  .text_content {
     background-color: white;
     padding: 10px;
     border-radius: 25px;
@@ -103,7 +103,7 @@
     text-align: center; /* Ensure text is centered */
   }
 
-  .intro-text {
+  .intro_text {
     font-size: 2.5rem;
     text-align: center;
     margin: 0 auto;
@@ -120,7 +120,7 @@
     max-width: 80%; /* Optional: reduce width for better centering */
   }
 
-  .book-call-button {
+  .book_call_button {
     background-color: var(--third-color);
     color: white;
     margin: 20px auto;
@@ -136,7 +136,7 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .add-book-container {
+  .add_book_container {
     flex-direction: column;
     align-items: center;
     width: 90%;
@@ -149,7 +149,7 @@
     transform: none;
   }
 
-  .intro-text {
+  .intro_text {
     font-size: 2rem;
     text-align: center;
     margin-left: 0;
@@ -161,7 +161,7 @@
     margin: 0 auto 15px;
   }
 
-  .book-call-button {
+  .book_call_button {
     margin-left: 0;
   }
 }
