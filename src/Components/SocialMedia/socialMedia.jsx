@@ -5,9 +5,10 @@ import LinkedInIcon from "../Assests/linkedIn.svg";
 import TwitterIcon from "../Assests/twitter.svg";
 import InstagramIcon from "../Assests/instagram.svg";
 
-const socialMedia = () => {
+//we add className to easy control stle of social media o both sideBar and aboutFooter
+const socialMedia = ({ className }) => {
   return (
-    <div className={Style.social_icons}>
+    <div className={`${Style.social_icons} ${className || ""}`}>
       <a
         href="https://github.com/AbdallahSHILI"
         target="_blank"
