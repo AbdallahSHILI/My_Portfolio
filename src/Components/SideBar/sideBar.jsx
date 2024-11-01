@@ -56,7 +56,7 @@ const Sidebar = ({ isOpen, toggleSidebar }) => {
           </a>
         </li>
       </ul>
-      <SocialMedia />
+      <SocialMedia className="sidebar-social" />
     </div>
   );
 };
