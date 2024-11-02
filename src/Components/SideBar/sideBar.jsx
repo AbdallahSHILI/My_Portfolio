@@ -9,21 +9,12 @@ import ServicesIcon from "../Assests/Services.svg";
 import BlogIcon from "../Assests/Blog.svg";
 import HireIcon from "../Assests/hireMe.svg";
 import { SocialMedia } from "../index";
+import SideBarHeader from "./SideBarHeader/sideBarHeader";
 
 const Sidebar = ({ isOpen, toggleSidebar }) => {
   return (
     <div className={`sidebar ${isOpen ? "open" : ""}`}>
-      <div className="sidebar-header">
-        <button className="close-btn" onClick={toggleSidebar}>
-          X Close Menu
-        </button>
-        <Link to="/">
-          <div className="sidebar-profile">
-            <img src={MyPic} className="sidebar-pic" alt="Abdallah Shili" />
-            <h2 className="sidebar-name">abdallah</h2>
-          </div>
-        </Link>
-      </div>
+      <SideBarHeader toggleSidebar={toggleSidebar} />
       <ul className="sidebar-links">
         <li>
           <Link to="/">
