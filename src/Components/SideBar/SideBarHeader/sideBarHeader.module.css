@@ -1,0 +1,48 @@
+.sidebar_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start; /* Aligns elements to the left */
+  gap: 20px; /* Adds space between elements */
+  padding: 20px;
+}
+
+.close_btn {
+  background: none;
+  border: none;
+  color: var(--third-color);
+  font-size: 24px;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.sidebar_profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.sidebar_pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar_name {
+  color: var(--third-color);
+  font-size: 21px;
+  align-self: center; /* Aligns the text vertically with the image */
+  margin-left: 10px; /* Adds some space between the image and text */
+}
+
+.sidebar_name a {
+  text-decoration: none;
+}
+
+.link_style {
+  text-decoration: none;
+}
