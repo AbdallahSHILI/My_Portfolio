@@ -87,8 +87,13 @@ const Navbar = () => {
           </span>
         </div>
       </nav>
-      {/* Main Content Wrapper */}
-      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />{" "}
+      {/* Add overlay */}
+      <div
+        className={`sidebar-overlay ${isSidebarOpen ? "open" : ""}`}
+        onClick={toggleSidebar}
+      />
+
+      <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
     </>
   );
 };
