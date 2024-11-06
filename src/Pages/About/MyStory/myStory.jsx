@@ -27,7 +27,7 @@ const myStory = () => {
           consistently deliver high-quality solutions efficiently.
         </p>
       </div>
-      <img src={myPic} alt="Abdallah Shili" className="profile-pic_right" />
+      {/* <img src={myPic} alt="Abdallah Shili" className="profile-pic_right" /> */}
     </section>
   );
 };

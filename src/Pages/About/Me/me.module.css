@@ -1,0 +1,51 @@
+/* Content Section with Image and Text */
+.content_section {
+  display: flex;
+  align-items: center;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+.profile_pic {
+  max-width: 40%;
+  border-radius: 25px;
+  margin-right: 30px;
+}
+
+.text_content {
+  max-width: 60%;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 1270px) {
+  /* Adjust gap between full-page-section and content-section */
+  .content_section {
+    padding-top: 10px; /* Reduce padding between sections */
+    margin-top: 0; /* Eliminate margin to reduce space */
+  }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 954px) {
+  .text_content p {
+    font-size: 1rem; /* Smaller text size */
+    line-height: 1.4; /* Adjust line height for better readability */
+    max-width: 100%; /* Ensure it takes full width */
+    margin: 0 auto; /* Center the text */
+  }
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .content_section {
+    flex-direction: column;
+  }
+
+  .text_content,
+  .profile_pic {
+    max-width: 100%;
+    text-align: left; /* Changed from center to left */
+    margin: 15px;
+  }
+}

@@ -24,25 +24,7 @@
   color: #000;
 }
 
-/* Content Section with Image and Text */
-.content-section {
-  display: flex;
-  align-items: center;
-  padding: 50px;
-  min-height: 100vh;
-}
 
-.profile_pic_aboutMe {
-  max-width: 40%;
-  border-radius: 10px;
-  margin-right: 30px;
-}
-
-.text-content {
-  max-width: 60%;
-  font-size: 1.2rem;
-  line-height: 1.6;
-}
 
 /* .profile_pic_aboutMe {
   margin-right: 30px;
