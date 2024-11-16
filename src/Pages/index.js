@@ -14,3 +14,4 @@ export { default as HomeServices } from "./Home/Services/services";
 export { default as Services } from "./Services/services";
 export { default as AllServices } from "./Services/AllServices/allServices";
 export { default as MainServices } from "./Services/MainService/mainService";
+export { default as Me } from "./About/Me/me";

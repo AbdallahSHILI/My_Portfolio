@@ -165,3 +165,22 @@
     margin-left: 0;
   }
 }
+
+@media (max-width: 500px) {
+  .add_book_container {
+    height: 35rem;
+  }
+
+  .profile_pic {
+    width: 70%; /* Keep the same width as larger screens */
+    min-width: 300px; /* Ensure minimum width */
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+
+  .text_content {
+    margin-top: 280px; /* Adjust if needed based on your image size */
+  }
+}
