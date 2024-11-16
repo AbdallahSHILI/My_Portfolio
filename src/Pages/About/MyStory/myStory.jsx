@@ -1,12 +1,12 @@
-// JavaScript (JSX - myStory component)
 import React from "react";
-import "./myStory.module.css";
-import myPic from "../../../Components/Assests/My-pic.jpg";
+import styles from "./myStory.module.css";
+import myPic from "../../../Components/Assests/My_story_Pic.jpg";
+import AllScreens from "../../../Components/Assests/all_Scr_Shot.jpg";
 
-const myStory = () => {
+const MyStory = () => {
   return (
-    <section className="content-section reverse">
-      <div className="text-content">
+    <section className={`${styles.content_section}`}>
+      <div className={styles.text_content}>
         <h2>My Story</h2>
         <p>
           From an early age, I was drawn to the world of technology.
@@ -27,9 +27,16 @@ const myStory = () => {
           consistently deliver high-quality solutions efficiently.
         </p>
       </div>
-      {/* <img src={myPic} alt="Abdallah Shili" className="profile-pic_right" /> */}
+      <div className={styles.image_container}>
+        <img src={myPic} alt="Abdallah Shili" className={styles.profile_pic} />
+        <img
+          src={AllScreens}
+          alt="Project Screens"
+          className={styles.project_screens}
+        />
+      </div>
     </section>
   );
 };
 
-export default myStory;
+export default MyStory;
