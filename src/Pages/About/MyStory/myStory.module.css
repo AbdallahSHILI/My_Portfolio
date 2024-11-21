@@ -2,7 +2,7 @@
 .content_section {
   display: flex;
   align-items: flex-start;
-  padding: 50px;
+  padding: 90px;
   min-height: 100vh;
   justify-content: space-between;
   gap: 20px;
@@ -44,48 +44,78 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Optional shadow */
 }
 
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
+@media (max-width: 1190px) {
   .content_section {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .text_content {
-    flex: 0 0 100%;
-    max-width: 90%;
-    text-align: center;
-    margin-bottom: 20px;
+    gap: 10px; /* Reduce the gap between sections */
+    padding: 50px; /* Reduce padding for a more compact layout */
   }
 
   .image_container {
-    flex: 0 0 100%;
-    max-width: 90%;
+    max-width: 100%; /* Allow more flexibility in sizing */
+    justify-content: center; /* Center align the images */
   }
 
   .profile_pic,
   .project_screens {
-    width: 100%;
-    height: auto;
-    position: relative;
+    width: 60%; /* Reduce image sizes to avoid conflicts */
+    height: auto; /* Maintain aspect ratio */
   }
 
   .project_screens {
-    width: 90%;
+    position: absolute;
     bottom: 0;
-    left: 5%;
-    transform: translate(0, 10%);
+    left: 30%; /* Center horizontally */
+    transform: translate(-50%, 20%); /* Adjust overlap and position */
+    z-index: 1; /* Ensure it overlays properly */
+  }
+
+  .profile_pic {
+    position: relative;
+    z-index: 0; /* Base image */
   }
 }
 
-@media (max-width: 600px) {
-  .text_content {
-    font-size: 1rem;
-    line-height: 1.4;
+@media (max-width: 1024px) {
+  .content_section {
+    flex-direction: column; /* Stack everything vertically */
+    align-items: center; /* Center the content */
+    padding: 20px; /* Reduce padding for smaller screens */
+    margin: 50px;
+    gap: 20px; /* Add spacing between elements */
+  }
+
+  .image_container {
+    flex: 0 0 100%; /* Take full width */
+    max-width: 100%; /* Ensure no overflow */
+    display: flex;
+    flex-direction: column; /* Stack images vertically */
+    align-items: center; /* Center the images */
+    position: relative; /* Enable positioning of overlapping images */
+    gap: 10px; /* Space between the images */
+  }
+
+  .profile_pic,
+  .project_screens {
+    width: 80%; /* Scale down for smaller screens */
+    left: 80px;
+    height: auto; /* Maintain aspect ratio */
   }
 
   .project_screens {
-    width: 95%;
-    transform: translate(0, 5%);
+    position: relative; /* Reset to normal stacking */
+    transform: none; /* Remove overlapping adjustments */
+    bottom: 0;
+    left: 0;
+    margin-top: -80px; /* Optional: Slight overlap effect */
+    z-index: 0;
+  }
+
+  .text_content {
+    flex: 0 0 100%; /* Take full width */
+    max-width: 90%; /* Limit text width for readability */
+    text-align: left; /* Center align text */
+    margin-top: 20px; /* Add space between images and text */
+    font-size: 1rem;
+    line-height: 1.4;
   }
 }
