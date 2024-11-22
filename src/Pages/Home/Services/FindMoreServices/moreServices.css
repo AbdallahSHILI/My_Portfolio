@@ -1,0 +1,25 @@
+.more-services-container {
+  display: flex;
+  justify-content: center; /* Center the content horizontally */
+  align-items: center; /* Center the content vertically */
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
+.more-services-link {
+  text-decoration: none; /* Remove default underline */
+  color: var(--third-color); /* Set the text color */
+  font-size: 1.2rem; /* Adjust font size as needed */
+  display: flex; /* Use flex to align text and icon */
+  align-items: center; /* Center items vertically */
+}
+
+.more-services-link:hover {
+  text-decoration: underline; /* Add underline on hover */
+  text-decoration-color: var(--secondary-color); /* Set underline color */
+}
+
+.right-arrow {
+  margin-left: 8px; /* Space between text and icon */
+  width: 20px; /* Adjust icon size */
+  height: 20px; /* Adjust icon size */
+}
