@@ -8,12 +8,14 @@ import {
   LetsAddBook,
   ScreenshotGif,
   HomeServices,
+  ProjectList,
 } from "../index";
 const Home = () => {
   return (
     <div className="home_container">
       <MainHome />
       <ScreenshotGif />
+      <ProjectList />
       <HomeServices />
       <LetsAddBook />
       <LevelUp />

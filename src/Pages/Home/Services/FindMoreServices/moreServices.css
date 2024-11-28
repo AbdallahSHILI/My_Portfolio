@@ -4,22 +4,38 @@
   align-items: center; /* Center the content vertically */
   margin: 20px 0; /* Add some margin for spacing */
 }
-
 .more-services-link {
   text-decoration: none; /* Remove default underline */
   color: var(--third-color); /* Set the text color */
   font-size: 1.2rem; /* Adjust font size as needed */
   display: flex; /* Use flex to align text and icon */
   align-items: center; /* Center items vertically */
+  position: relative; /* Allow positioning of the underline */
 }
 
 .more-services-link:hover {
-  text-decoration: underline; /* Add underline on hover */
-  text-decoration-color: var(--secondary-color); /* Set underline color */
+  text-decoration: none; /* Remove the default underline for hover */
+}
+
+.more-services-link::after {
+  content: ""; /* Create an underline using pseudo-element */
+  position: absolute; /* Position relative to the link */
+  bottom: -2px; /* Position it just below the text */
+  left: 0; /* Start from the beginning of the text */
+  width: 0%; /* Initially no underline */
+  height: 2px; /* Thickness of the underline */
+  background-color: var(--secondary-color); /* Underline color */
+  transition: width 0.3s ease, height 0.3s ease; /* Smooth animation */
+}
+
+.more-services-link:hover::after {
+  width: 100%; /* Expand the underline to full width */
+  height: 4px; /* Slightly increase thickness on hover */
 }
 
 .right-arrow {
-  margin-left: 8px; /* Space between text and icon */
-  width: 20px; /* Adjust icon size */
-  height: 20px; /* Adjust icon size */
+  margin-left: 8px;
+  margin-bottom: -5px;
+  width: 27px; /* Adjust icon size */
+  height: 27px; /* Adjust icon size */
 }
