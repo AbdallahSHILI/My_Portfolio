@@ -6,7 +6,7 @@ import flechIcon from "../../../../Components/Assests/Flech.svg";
 const MoreServices = () => {
   return (
     <div className="more-services-container">
-      <Link to="/services" className="more-services-link">
+      <Link to="/Services" className="more-services-link">
         Find out more about my services
         <img src={flechIcon} alt="Right Arrow" className="right-arrow" />
       </Link>
