@@ -4,7 +4,7 @@
   align-items: center; /* Vertically center items */
   flex-wrap: wrap; /* Ensure responsiveness */
   gap: 20px; /* Spacing between items */
-  padding: 20px; /* Padding around the container */
+  margin: auto 100px;
 }
 
 .projectItem {
@@ -42,4 +42,21 @@
 
 .projectItem:hover .arrowIcon {
   transform: translateX(5px); /* Move icon slightly on hover */
+}
+
+.link {
+  text-decoration: none !important; /* Remove underline from the link */
+}
+
+/* Media query for 1000px screen width */
+@media (max-width: 1000px) {
+  .projectItem {
+    display: none; /* Hide all project items */
+  }
+  .projectItem:last-child {
+    display: flex; /* Show only the last project item */
+    justify-content: center; /* Center the last project item */
+    align-items: center; /* Center the last project item vertically */
+    margin: auto; /* Center the last project item horizontally */
+  }
 }
