@@ -4,8 +4,8 @@ import "./screenshotGif.css";
 const ScreenshotGif = () => {
   return (
     <>
-      <FirstProject />
-      <SecondProject />
+      {/* <FirstProject />
+      <SecondProject /> */}
     </>
   );
 };
