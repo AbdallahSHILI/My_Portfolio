@@ -1,9 +1,7 @@
 import React from "react";
-import styles from "../MainStyleProject.module.css";
-import gifImageMacIphone from "../../../../Components/Assests/Hello_Tasty.png";
-import gifImageIphone from "../../../../Components/Assests/Reservé.png";
+import styles from "./ProjectDisplay.module.css";
 
-const ThirdProject = () => {
+const ProjectDisplay = ({ gifImageMacIphone, gifImageIphone }) => {
   return (
     <div className={styles.gif_container}>
       <img
@@ -20,4 +18,4 @@ const ThirdProject = () => {
   );
 };
 
-export default ThirdProject;
+export default ProjectDisplay;

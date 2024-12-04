@@ -1,17 +1,33 @@
 import React from "react";
-import "./screenshotGif.css";
-import FirstProject from "./FirstProject/FirstProject";
-import SecondProject from "./SecondProject/SecondProject";
-import ThirdProject from "./ThirdProject/ThirdProject";
+import ProjectDisplay from "./ProjectDisplay/ProjectDisplay";
+import gifImageMacIphone1 from "../../../Components/Assests/Portfolio_ScreenShot.gif";
+import gifImageIphone1 from "../../../Components/Assests/Max-width_Portfolio_ScreenShot.gif";
+import gifImageMacIphone2 from "../../../Components/Assests/Blank diagram.png";
+import gifImageIphone2 from "../../../Components/Assests/Firefly 20231202140733.png";
+import gifImageMacIphone3 from "../../../Components/Assests/Hello_Tasty.png";
+import gifImageIphone3 from "../../../Components/Assests/Reservé.png";
 
 const ScreenshotGif = ({ activeProject }) => {
   return (
     <>
-      {/* condition to render the correct gif based on the active project 
-       clothing, tasty, chat are set in the projectList component*/}
-      {activeProject === "clothing" && <FirstProject />}
-      {activeProject === "tasty" && <SecondProject />}
-      {activeProject === "chat" && <ThirdProject />}
+      {activeProject === "clothing" && (
+        <ProjectDisplay
+          gifImageMacIphone={gifImageMacIphone1}
+          gifImageIphone={gifImageIphone1}
+        />
+      )}
+      {activeProject === "tasty" && (
+        <ProjectDisplay
+          gifImageMacIphone={gifImageMacIphone2}
+          gifImageIphone={gifImageIphone2}
+        />
+      )}
+      {activeProject === "chat" && (
+        <ProjectDisplay
+          gifImageMacIphone={gifImageMacIphone3}
+          gifImageIphone={gifImageIphone3}
+        />
+      )}
     </>
   );
 };
