@@ -2,8 +2,8 @@ import React from "react";
 import ProjectDisplay from "./ProjectDisplay/ProjectDisplay";
 import gifImageMacIphone1 from "../../../Components/Assests/Portfolio_ScreenShot.gif";
 import gifImageIphone1 from "../../../Components/Assests/Max-width_Portfolio_ScreenShot.gif";
-import gifImageMacIphone2 from "../../../Components/Assests/Blank diagram.png";
-import gifImageIphone2 from "../../../Components/Assests/Firefly 20231202140733.png";
+import gifImageMacIphone2 from "../../../Components/Assests/Tasty_ScreenShot.gif";
+import gifImageIphone2 from "../../../Components/Assests/Tasty_ScreenShot_portable.gif";
 import gifImageMacIphone3 from "../../../Components/Assests/Hello_Tasty.png";
 import gifImageIphone3 from "../../../Components/Assests/Reservé.png";
 

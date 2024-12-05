@@ -33,6 +33,11 @@
   transition: width 0.3s ease, height 0.3s ease; /* Smooth animation */
 }
 
+.projectItem.active::after {
+  width: 100%; /* Ensure underline is fully visible */
+  height: 4px; /* Match hover thickness */
+}
+
 .arrowIcon {
   margin-left: 8px; /* Space between text and icon */
   width: 16px; /* Adjust size for better alignment */

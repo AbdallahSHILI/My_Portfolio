@@ -1,6 +1,5 @@
 import React from "react";
 import "./about.css"; // Create a CSS file for styling
-import myPic from "../../Components/Assests/My-pic.jpg";
 import { AboutFooter, CopyRight, LevelUp, Me, MyStory } from "../index";
 
 const About = () => {

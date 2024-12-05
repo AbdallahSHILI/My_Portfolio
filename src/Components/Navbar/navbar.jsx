@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import MyPic from "../Assests/My-pic.jpg";
 import darkLogo from "../Assests/dark mode.jpg";
