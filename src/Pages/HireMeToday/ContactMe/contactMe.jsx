@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./contactMe.css";
 import myPic from "../../../Components/Assests/My-pic.jpg";
-import { About, AboutFooter, CopyRight } from "../../index";
+import { AboutFooter, CopyRight } from "../../index";
 
 const ContactMe = () => {
   const [isSwitched, setIsSwitched] = useState(false);
@@ -55,7 +55,7 @@ const ContactMe = () => {
             </>
           ) : (
             <>
-              <img src={myPic} alt="My Picture" className="my-pic" />
+              <img src={myPic} alt="Me" className="my-pic" />
               <h1>Full Stack Web Developer</h1>
             </>
           )}
