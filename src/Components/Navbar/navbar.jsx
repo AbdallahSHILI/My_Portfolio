@@ -34,10 +34,9 @@ const Navbar = () => {
         <div className="nav_links">
           <Link to="/About"> About </Link>
           <Link to="/Projects"> Projects </Link>
-          <Link to="/HireMe"> Hire Me Today </Link>
-          <a href="#cv">My_CV</a>
           <Link to="/Services">Services</Link>
           <a href="#blog">Blog</a>
+          <Link to="/HireMe"> Hire Me Today </Link>
 
           <img src={darkLogo} className="darkLogo" alt="dark Logo" />
         </div>
