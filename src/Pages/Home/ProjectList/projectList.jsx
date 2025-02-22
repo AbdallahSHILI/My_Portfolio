@@ -19,7 +19,7 @@ const ProjectList = ({ onProjectClick }) => {
         Tasty-Menuy
       </div>
       <div className={style.projectItem} onClick={() => onProjectClick("chat")}>
-        Real-Time-Chat-App
+        Bortoana
       </div>
       <Link to="/Projects" className={style.link}>
         <div className={style.projectItem}>
