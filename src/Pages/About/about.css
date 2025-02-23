@@ -1,6 +1,8 @@
 /* General Page Styles */
 .about-page {
   font-family: Arial, sans-serif;
+  background-color: var(--primary-color);
+  color: var(--third-color);
 }
 
 /* Full Page Section for Introduction */
@@ -9,9 +11,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full height of the viewport */
+  height: 100vh;
   text-align: center;
-  background-color: #fff;
+  background-color: var(--primary-color);
 }
 
 .full-page-section h1 {
@@ -21,10 +23,8 @@
 
 .full-page-section h2 {
   font-size: 2rem;
-  color: #000;
+  color: var(--third-color);
 }
-
-
 
 /* .profile_pic_aboutMe {
   margin-right: 30px;

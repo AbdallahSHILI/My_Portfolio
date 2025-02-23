@@ -8,7 +8,7 @@
 }
 
 .top_navbar a:hover {
-  background-color: var(--primary-color);
+  background-color: #fbf7f3;
 }
 
 .top_navbar a:hover span {
@@ -21,6 +21,11 @@
   margin: 22px 155px;
 }
 
+.top_navbar Link,
+.top_navbar a {
+  text-decoration: none;
+}
+
 .darkLogo {
   width: 20px;
   height: 20px;
@@ -30,7 +35,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--third-color);
-  margin-left: 10px;
+  margin: 10px;
   text-decoration: none; /* Ensure underline is removed */
 }
 
@@ -58,7 +63,7 @@
   color: var(--third-color);
   text-decoration: none;
   font-size: 1.1rem;
-  padding: 8px 15px;
+  padding: 15px 15px;
   border-radius: 9px;
   transition: background-color 0.3s ease, color 0.3s ease;
 }

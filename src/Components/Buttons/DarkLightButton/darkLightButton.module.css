@@ -1,0 +1,35 @@
+.toggleSwitch {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.light {
+  background-color: #f0f0f0;
+  color: #000000;
+}
+
+.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.label {
+  font-family: system-ui, -apple-system, sans-serif;
+  letter-spacing: 0.5px;
+}
+
+.icon {
+  transition: transform 0.3s ease;
+}
+
+.toggleSwitch:hover .icon {
+  transform: rotate(12deg);
+}
