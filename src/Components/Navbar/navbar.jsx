@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./navbar.css";
 import MyPic from "../Assests/My-pic.jpg";
-import darkLogo from "../Assests/dark mode.jpg";
 import Home from "../Assests/Home.svg";
 import Menu from "../Assests/Menu.svg";
 import CloseIcon from "../Assests/close.svg";
@@ -9,6 +8,7 @@ import Projects from "../Assests/Projects.svg";
 import About from "../Assests/About.svg";
 import { Link } from "react-router-dom";
 import Sidebar from "../SideBar/sideBar";
+import DarkLightButton from "../Buttons/DarkLightButton/darkLightButton";
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -27,8 +27,8 @@ const Navbar = () => {
       <nav className="top_navbar">
         <Link to="/">
           <div className="logo">
-            <img src={MyPic} className="my_pic" alt="Abdallah Shili" />
-            <h1 className="my_name">abdallah</h1>
+            <img src={MyPic} alt="Abdallah Shili" />
+            <h1>abdallah</h1>
           </div>
         </Link>
         <div className="nav_links">
@@ -38,7 +38,7 @@ const Navbar = () => {
           <a href="#blog">Blog</a>
           <Link to="/HireMe"> Hire Me Today </Link>
 
-          <img src={darkLogo} className="darkLogo" alt="dark Logo" />
+          <DarkLightButton />
         </div>
       </nav>
       <nav className="bottom_navbar">

@@ -2,6 +2,16 @@
   --primary-color: #f3eeea;
   --secondary-color: #6ce5b1;
   --third-color: #031926;
+  /* For a smoother transition between dark and light mode */
+  transition: all 0.3s ease;
+}
+
+[data-theme="dark"] {
+  --primary-color: #3b3a51;
+  --secondary-color: #6d59a8;
+  --third-color: #ffffff;
+  /* For a smoother transition between dark and light mode */
+  transition: all 0.3s ease;
 }
 
 .App {
